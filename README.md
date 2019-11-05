@@ -43,7 +43,6 @@ print_r($responseData);
 ### API Success Response
 
 ```
-php
 {
     "status": "success",
     "redirect_3ds_url": "https://ipaytotal.us/transactions-3ds-page?token=YourGeneretedToken"
@@ -52,7 +51,7 @@ php
 ### API Fail/Error Response
 
 ```
-php{
+{
     "status": "fail",
     "message": "None issuing bank"
 }  
