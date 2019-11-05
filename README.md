@@ -75,3 +75,14 @@ print_r($responseData);
 in the step one you got "redirect_3ds_url" just redirect this url in your browser then you can see the bank's 3ds page. put on that page required details and makee your transaction. after done transaction success/declined/cancel then you can redirect bank your "redirect_url" link which you pass in step one api post request
 
 ```
+### Success Response
+
+```php
+https://redirect_url.com?status=success&message=Your Transaction was proccessed succesfully&order_id=456789123456789
+```
+
+### Declined Response
+
+```php
+https://redirect_url.com?status=fail&message=declined message come from bank side&order_id=456789123456789
+```
