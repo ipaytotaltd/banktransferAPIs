@@ -1,4 +1,4 @@
-# iPayTotal Payment API
+# iPayTotal Bank Payment API
 Below is the simple API form sample.
 ![iPayTotal_Payment_form](https://user-images.githubusercontent.com/43794351/68205880-5cc31200-fff1-11e9-96cf-13f6489a353d.png)
 ## Card Tokenizer Payment API
