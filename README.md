@@ -1,18 +1,27 @@
 # iPayTotal Bank Payment API
 Below is the simple API form sample.
 ![iPayTotal_Payment_form](https://user-images.githubusercontent.com/43794351/68205880-5cc31200-fff1-11e9-96cf-13f6489a353d.png)
-## Card Tokenizer Payment API
 
-### Step - 1 - Create card token
+## Step - 1
 ```php 
-<?php
-$url = "https://ipaytotal.solutions/api/cardtokenization";
-// Fill with real card info
+// You can call our API following curl post example
+$url = "https://ipaytotal.us/api/transaction";
+$key = "Your API Key";
+// Fill with real customer info
 $data = [
-    'card_no' => '4242424242424242',
-    'ccExpiryMonth' => '02',
-    'ccExpiryYear' => '2020',
-    'cvvNumber' => '123',
+    'api_key' => $key,
+    'first_name' => 'First Name',
+    'last_name' => 'Last Name',
+    'address' => 'Address',
+    'country' => 'US',
+    'state' => 'NY', // if your country US then use only 2 letter state code.
+    'city' => 'New York',
+    'zipcode' => '38564',
+    'email' => 'test@gmail.com',
+    'phone_number' => '+91999999999',
+    'amount' => '10.00',
+    'currency' => 'USD',
+    'redirect_url' => 'https://www.example.com',
 ];
 
 $curl = curl_init();
