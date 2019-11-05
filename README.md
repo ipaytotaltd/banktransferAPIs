@@ -40,15 +40,16 @@ $responseData = json_decode($response);
 echo "<pre>";
 print_r($responseData);
 ```
-### Step - 1 - API Success Response
+### API Success Response
 
-```php
+```
+php
 {
     "status": "success",
     "redirect_3ds_url": "https://ipaytotal.us/transactions-3ds-page?token=YourGeneretedToken"
 }  
 ```
-### Step - 1 - API Fail/Error Response
+### API Fail/Error Response
 
 ```
 php{
@@ -56,7 +57,7 @@ php{
     "message": "None issuing bank"
 }  
 ```
-### Step - 1 - API Error Validation Response
+### API Error Validation Response
 
 ```
 {
