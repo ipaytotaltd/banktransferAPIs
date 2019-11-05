@@ -1,6 +1,6 @@
 # iPayTotal Payment API
 Below is the simple API form sample.
-![iPayTotal_Payment_form](https://user-images.githubusercontent.com/43794351/61131710-8b176180-a4d7-11e9-925b-a5fd13ea6bc1.png)
+![iPayTotal_Payment_form](https://user-images.githubusercontent.com/43794351/68205880-5cc31200-fff1-11e9-96cf-13f6489a353d.png)
 ## Card Tokenizer Payment API
 
 ### Step - 1 - Create card token
