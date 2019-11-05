@@ -25,6 +25,7 @@ $data = [
     'amount' => '10.00',
     'currency' => 'USD',
     'redirect_url' => 'https://www.example.com',
+    'customer_order_id' => 'Your custom order id.' // (Optional)
 ];
 
 $curl = curl_init();
@@ -81,11 +82,11 @@ in the step one you got "redirect_3ds_url" just redirect this url in your browse
 ### Success Response
 
 ```php
-https://redirect_url.com?status=success&message=Your Transaction was proccessed succesfully&order_id=456789123456789
+https://redirect_url.com?status=success&message=Your Transaction was proccessed succesfully&order_id=456789123456789&customer_order_id=customer_order_id
 ```
 
 ### Declined Response
 
 ```php
-https://redirect_url.com?status=fail&message=declined message come from bank side&order_id=456789123456789
+https://redirect_url.com?status=fail&message=declined message come from bank side&order_id=456789123456789customer_order_id=customer_order_id
 ```
