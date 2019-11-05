@@ -3,6 +3,9 @@ Below is the simple API form sample.
 ![iPayTotal_Payment_form](https://user-images.githubusercontent.com/43794351/68205880-5cc31200-fff1-11e9-96cf-13f6489a353d.png)
 
 ## Step - 1
+
+in the step one you should make API post request by the following values.
+
 ```php 
 // You can call our API following curl post example
 $url = "https://ipaytotal.us/api/transaction";
@@ -71,10 +74,10 @@ print_r($responseData);
 
 ## Step - 2
 
-```php
+
 in the step one you got "redirect_3ds_url" just redirect this url in your browser then you can see the bank's 3ds page. put on that page required details and makee your transaction. after done transaction success/declined/cancel then you can redirect bank your "redirect_url" link which you pass in step one api post request
 
-```
+
 ### Success Response
 
 ```php
